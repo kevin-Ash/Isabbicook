@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ishabbicook</title>
+    <!-- Custom CSS-->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<!-- Alternative navbar -->
+<!-- End of alternative -->
+
+<!-- Navbar -->
+    <nav class="navbar">
+        <div class="navbar-center">
+        <span class="nav-icon" for="menu-btn"><i class="fa fa-bars"></i></span><!-- Navigation icon for bars -->
+        
+        
+        <!-- Branding -->
+        <h1 class="logo">Ishabbicook</h1>
+
+        <!-- Cart icon btn -->
+         <div class="cart-btn"><!-- Shopping cart button div with empty cart number -->
+            <span class="nav-icon"><i class="fa fa-cart-plus"></i><!-- Shopping cart button itself--></span>
+            <div class="cart-items">0</div>
+        </div>
+
+        </div>
+    </nav>
+<!-- End of Navbar -->
+
+<!-- Hero -->
+<header class="hero">
+<div class="banner">
+    <div class="banner-image">
+        <img src="./images/logo.png" alt="Logo-image">
+    </div>
+    <button class="banner-btn">Shop Our Menu</button>
+</div>
+</header>
+<!-- End of Hero -->
+
+<!-- Products -->
+<section class="products">
+
+    <div class="section-title">
+        <h1>Our Menu</h1>
+    </div>
+  
+       
+    <div class="products-list">
+
+        <!-- Cart -->
+        <div class="cart-overlay">
+            <div class="cart">
+                <span class="close-cart"><i class="fa fa-window-close"></i></span>
+                <h2>Your Cart</h2>
+                <div class="cart-content">
+                    <!-- Cart item -->
+                    <div class="cart-item">
+                        <img src="./images/product-1.jpeg" alt="product-image">
+                        <div>
+                            <h4>J Rice</h4>
+                            <h5>6.50</h5>
+                            <span class="remove-item">Remove</span>
+                        </div>
+                        <div>
+                            <i class="fa fa-chevron-up"></i>
+                                <p class="item-amount">1</p>
+                            <i class="fa fa-chevron-down"></i>
+                        </div>
+                    </div>
+                    <!-- End of cart item-->
+                    <!-- Cart footer -->
+                    <div class="cart-footer">
+                        <h3>Your Total £:<span class="cart-total"></span></h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End of  Cart -->    
+    </div>
+   
+</section>
+<!-- End of Products -->
+
+<!-- JS -->
+    <script src="app.js"></script>
+    <script src="https://kit.fontawesome.com/d027480c9c.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+</body>
+</html>
