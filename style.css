@@ -1,6 +1,4 @@
-/* Google fonts import - Change to adobe web font */
 @import url("https://fonts.googleapis.com/css?family=Lato:400,700");
-/* CSS Variables */
 :root {
   --primaryColor: #CE4824;
   --mainWhite: #fff;
@@ -10,26 +8,21 @@
   --mainSpacing: 0.1rem;
   --mainTransition: all 0.3s linear;
 }
-
-/* Universal  */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
 a {
   color: var(--mainWhite);
+  text-decoration: none;
 }
-
-/* Settings for body container */
 body {
   color: var(--mainBlack);
   background-image: url("./images/background.png");
   font-family: "Lato", sans-serif;
 }
-
-/* Navigation */
+/* Navbar */
 .navbar {
     position: sticky;
     top: 0;
@@ -40,19 +33,17 @@ body {
     background: var(--primaryColor);
     z-index: 1;
   }
-/* Container inside navbar that centers all items */
-  .navbar-center {
+.navbar-center { /* Container inside navbar that centers all items */
     width: 100%;
     max-width: 1170px;
     margin: 0 auto;
     display: flex;
     align-items: center;
-    justify-content: space-between; /* As much space as possible between all the items */
+    justify-content: space-evenly;
     padding: 0 1.5rem;
   }
-/* Size of fa-bars */
   .nav-icon {
-    font-size: 1.5rem;
+    font-size: 1.5rem; /* Size of fa-bars */
   }
   .cart-btn {
     position: relative;
@@ -67,29 +58,13 @@ body {
     border-radius: 30%;
     color: var(--mainWhite);
   }
-  .nav-menu {
-    display: flex;
-    text-decoration: none;
-  }
-  .nav-menu ul {
-    float: left;
-  }
-  .nav-menu ul li {
-    list-style: none;
-    text-decoration: none;
-    display: inline-block;
-  }
-  .nav-menu ul li a {
-    list-style: none;
-    text-decoration: none;
-    display: inline-block;
-  }
+
   /* --------------- End of Navbar ---------------- */
 
   /* --------------- Hero ---------------- */
 .hero {
   min-height: calc(100vh - 60px); /* Full screen height - navbar space */
-  background: url("./images/hero-bcg.jpeg") center/cover no-repeat;
+  background: url("./images/showcase.jpeg") center/cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -236,24 +211,16 @@ body {
   transition: var(--mainTransition);
   transform: translateX(100%); /* Moved across x-axis across 100% of screen */
 }
-
-/*  Classes added with JS */
+/* Add classes with JS */
 .showCart {
-  transform: translateX(0);
+  transform: translateX(0); /* Return to original position */
 }
-.transparentBcg {
-  visibility: visible;
-}
-
-
-
-/* Close button on shopping basket */
-.close-cart {
+.close-cart { /* Close button on shopping basket */
   font-size: 1.7rem;
   cursor: pointer;
 }
 .cart h2 {
-  text-transform: capitalize;
+  text-transform: uppercase;
   text-align: center;
   letter-spacing: var(--mainSpacing);
   margin-bottom: 2rem;
@@ -328,20 +295,11 @@ footer {
   justify-content: space-between; /* As much space as possible between all the items */
   padding: 0 1.5rem;
 }
-
-.sitemap{
-  text-decoration: none;
-}
-
-.sitemap-list  li{
-  list-style: none;
-}
-
 /* --------------- End of Footer --------------*/
 
 /********** Media Queries *******************/
 
-/* At smallest width trigger -> */
+/* When screen is bigger than 768px => */
 @media screen and (min-width: 768px) {
   .cart {
     width: 30vw;
@@ -352,9 +310,7 @@ footer {
     display: none;
   } 
 }
-/* At largest width trigger -> */
+/* When screen is smaller than 768px =>
 @media screen and (max-width: 768px) {
-  .nav-menu {
-    display: none;
-  } 
-}
+  
+} */
